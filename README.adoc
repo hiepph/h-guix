@@ -1,0 +1,14 @@
+= h-guix
+
+Personal channel for Guix packages.
+
+== Contribution
+
+- All commits must be signed with an OpenGPG key.
+
+- To setup signing automatically:
+
+[source,bash]
+----
+git config commit.gpgsign true
+----
