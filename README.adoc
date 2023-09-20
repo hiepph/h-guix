@@ -21,6 +21,15 @@ Personal channel for Guix packages.
 guix pull
 ----
 
+- To switch to new channels with *Fish shell*, add this line:
+
+[source,fish]
+----
+set -gx GUIX_PROFILE $HOME/.config/guix/current
+set -p PATH $GUIX_PROFILE/bin
+----
+
+
 == Contribution
 
 - All commits must be signed with an OpenGPG key.
