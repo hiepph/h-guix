@@ -41,3 +41,19 @@ git config commit.gpgsign true
 ----
 guix build -L . my-package
 ----
+
+- To install and test:
+
+
+[source,bash]
+----
+guix install -L . my-package
+----
+
+- To uninstall:
+
+
+[source,bash]
+----
+guix remove -L . my-package
+----
