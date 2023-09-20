@@ -8,14 +8,14 @@
 (define-public terragrunt
   (package
    (name "terragrunt")
-   (version "0.50.14")
+   (version "0.51.3")
    (source (origin
             (method url-fetch)
             (uri (string-append "https://github.com/gruntwork-io/terragrunt/releases/download/v" version
                                 "/terragrunt_linux_amd64"))
             (sha256
              (base32
-              "0bdi0sv7jg675cfczcbacffqjxlvqkkk89sgzg70f91v9i7m5is9"))))
+              "17h9jrrrh2b2k32lnhiwsnfn06w9dqj1fl804wh5pbhv8wdkvqvx"))))
    (build-system copy-build-system)
    (arguments
     `(#:install-plan '(("terragrunt_linux_amd64" "bin/terragrunt"))
