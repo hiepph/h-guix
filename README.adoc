@@ -2,6 +2,25 @@
 
 Personal channel for Guix packages.
 
+== Set up
+
+- To add my channel, add this to `~/.config/guix/channels.scm`:
+
+[source,scheme]
+----
+(cons (channel
+       (name 'h-guix)
+       (url "https://github.com/hiepph/h-guix.git"))
+      %default-channels)
+----
+
+- And then:
+
+[source,bash]
+----
+guix pull
+----
+
 == Contribution
 
 - All commits must be signed with an OpenGPG key.
@@ -11,4 +30,14 @@ Personal channel for Guix packages.
 [source,bash]
 ----
 git config commit.gpgsign true
+----
+
+
+== Development
+
+- To build a package locally:
+
+[source,bash]
+----
+guix build -L . my-package
 ----
